@@ -31,11 +31,9 @@ function Post({ post }) {
           <img src={post.img} />
         </div>
         <div className="info">
-          <div className="item">
-            <button onClick={() => setLiked((pre) => !pre)}>
+            <div onClick={() => setLiked((pre) => !pre)} className="item">
               {liked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />} 12 Likes
-            </button>
-          </div>
+            </div>
           <div className="item">
             <TextsmsOutlinedIcon /> 12 Comments
           </div>
